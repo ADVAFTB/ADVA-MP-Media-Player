@@ -62,7 +62,3 @@ The app is designed to read the service token only after the user explicitly com
 - Zvuk authentication tokens are sensitive. Keep the device account protected and do not publish logs or local data files that might contain session information.
 - Use the online integrations in accordance with the relevant services' terms and local law.
 - ADVA Media Player is an independent project and is not affiliated with Google, YouTube, Zvuk, Muzofond, or SberBank.
-
-## License
-
-The project's `package.json` currently declares the **ISC** license. Make sure a matching `LICENSE` file is included in the repository before public distribution.
