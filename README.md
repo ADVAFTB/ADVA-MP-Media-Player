@@ -24,7 +24,7 @@ ADVA Media Player is a Windows desktop music player built with Electron. It comb
 3. Launch ADVA Media Player and complete the initial local-profile and language setup.
 4. Open **Music Catalog**, choose a provider, and search for a track or artist. Use the local-file command to play audio stored on your computer.
 
-The main Electron 28 build is intended for **Windows 10 and Windows 11**. It is not supported on Windows 7. A separate Legacy build based on an older Electron branch may be published independently; use it only if it is explicitly listed in Releases and has been tested on your system.
+The main build on Electron 28. A separate build on the old Electron branch can be published separately. Use it only if it is clearly available in Releases and has been tested on your system.
 
 ### Connecting Zvuk
 
