@@ -37,47 +37,6 @@ The app is designed to read the service token only after the user explicitly com
 
 **YouTube Music:** a Google sign-in is not required by the current integration. Available tracks and playback can still vary by country, network, and changes to the third-party service.
 
-## Building from source
-
-### Requirements
-
-- Windows is recommended for producing and testing Windows packages.
-- Node.js and npm.
-- The project source files, including `main.js`, `index.html`, `locales.js`, and `sub.js`.
-- `ytmusic_bridge.exe` and `zvuk_bridge.exe` alongside the project source for the usual packaged workflow. If you need to rebuild these bridges, install Python 3.10 or newer and use the included build scripts.
-
-### Run in development
-
-1. Download or clone the repository and open a terminal in the project folder.
-2. Install Node dependencies:
-
-   ```bat
-   npm install
-   ```
-
-3. Make sure the two bridge executables are available to the app. To rebuild the bridges, run the included `build_ytmusic_bridge.bat` or `build_zvuk_bridge.bat` scripts as appropriate. These scripts download Python dependencies, so an internet connection is required.
-4. Start the app:
-
-   ```bat
-   npm start
-   ```
-
-### Build Windows packages
-
-The following commands are available when the project's `package.json` contains the corresponding scripts and the bridge executables are ready:
-
-```bat
-npm run dist:nsis
-npm run dist:portable
-npm run dist:all
-```
-
-- `dist:nsis` — create a Windows installer.
-- `dist:portable` — create a separate portable build.
-- `dist:all` — build all targets configured in `package.json`.
-
-Build output is written to the configured `dist` directory. Always test the resulting installer/portable build on a clean Windows environment before publishing it. For Enigma Virtual Box packaging, first verify the ordinary `win-unpacked` build; virtualizing the app does not guarantee that Electron or child-process bridge executables will work correctly.
-
 ## What the project uses
 
 - **Electron** — desktop application runtime (Chromium + Node.js).
