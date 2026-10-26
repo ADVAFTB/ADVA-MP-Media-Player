@@ -54,7 +54,7 @@ The app is designed to read the service token only after the user explicitly com
 - Track availability, full-length playback, and quality depend on each provider, the user's account, region, subscription, and rights-holder settings.
 - Synchronized lyrics/subtitles are not available for every track and are currently integrated only with YouTube Music and Zvuk.
 - Some icons or cover images may fail to load. Fixes and new releases are not guaranteed on a fixed schedule.
-- The Windows 7 Legacy branch, if offered, uses an older and unsupported Electron version and does not receive the security support of current Electron releases.
+- The Windows 7 branch, if offered, uses an older Electron version
 
 ## Privacy and safety notes
 
