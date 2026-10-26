@@ -1,4 +1,4 @@
-ADVA MP Media Player
+# ADVA MP Media Player
 
 **[English](README.md) · Русский**
 
