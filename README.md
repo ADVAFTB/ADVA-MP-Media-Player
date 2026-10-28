@@ -1,6 +1,6 @@
 # ADVA MP Media Player
 
-**English (default) · [Русский](README.ru.md)**
+**English · [Русский](README.ru.md)**
 
 ADVA Media Player is a Windows desktop music player built with Electron. It combines local audio playback with online music catalog integrations, a built-in equalizer, synchronized lyrics/subtitles, and a multilingual interface.
 
