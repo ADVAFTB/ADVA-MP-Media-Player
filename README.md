@@ -46,7 +46,7 @@ The app is designed to read the service token only after the user explicitly com
 - **Python bridge executables** — separate helper processes for online music services.
 - **`ytmusicapi` and `yt-dlp`** — used by the YouTube Music bridge.
 - **`zvuk-music`** — used by the Zvuk bridge.
-- **Electron `safeStorage`** — encrypts the stored Zvuk token when OS-backed encryption is available.
+- **Electron `safeStorage` (asynchronous API)** — encrypts and decrypts the stored Zvuk authentication token using OS-provided cryptography. ADVA checks encryption availability before saving the token, uses `encryptStringAsync()` and `decryptStringAsync()`, and automatically refreshes encrypted data when key rotation is required. The token is not saved if encryption is unavailable.
 
 ## Known limitations
 
